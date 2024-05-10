@@ -1,6 +1,6 @@
 # render Admin & Developer users list with the structure required by EKS module
 locals {
-  admin_user_map_users = [
+  /*   admin_user_map_users = [
     for admin_user in var.admin_users :
     {
       userarn  = "arn:aws:iam::${data.aws_caller_identity.current.account_id}:user/${admin_user}"
@@ -15,7 +15,7 @@ locals {
       username = developer_user
       groups   = ["${var.name_prefix}-developers"]
     }
-  ]
+  ] */
 
   self_managed_node_groups = {
     worker_group1 = {
