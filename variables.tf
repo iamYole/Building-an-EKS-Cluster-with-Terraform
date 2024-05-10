@@ -22,15 +22,6 @@ variable "zone_offset" {
   type        = number
   description = "CIDR block bits extension offset to calculate Public subnets, avoiding collisions with Private subnets."
 }
-
-variable "admin_users" {
-  type        = list(string)
-  description = "List of Kubernetes admins."
-}
-variable "developer_users" {
-  type        = list(string)
-  description = "List of Kubernetes developers."
-}
 variable "asg_instance_types" {
   description = "List of EC2 instance machine types to be used in EKS."
 }
