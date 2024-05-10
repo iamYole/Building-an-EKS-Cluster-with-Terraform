@@ -1,1 +1,1 @@
-# Building-an-EKS-Cluster-with-Terraform
+# Building an EKS Cluster with Terraform
