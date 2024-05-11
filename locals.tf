@@ -2,7 +2,7 @@
 locals {
   self_managed_node_groups = {
     worker_group1 = {
-      name = "${var.cluster_name}-worker-group"
+      name = "${var.cluster_name}-wg"
 
       min_size      = var.autoscaling_minimum_size_by_az * length(data.aws_availability_zones.available_azs.zone_ids)
       desired_size  = var.autoscaling_minimum_size_by_az * length(data.aws_availability_zones.available_azs.zone_ids)
