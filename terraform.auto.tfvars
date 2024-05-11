@@ -1,4 +1,4 @@
-cluster_name            = "demo-app-eks"
+cluster_name            = "tooling-app-cluster"
 iac_environment_tag     = "development"
 name_prefix             = "ytech"
 main_network_block      = "10.0.0.0/16"
@@ -7,4 +7,4 @@ zone_offset             = 8
 
 asg_instance_types             = [{ instance_type = "t3.small" }, { instance_type = "t2.small" }, ]
 autoscaling_minimum_size_by_az = 1
-autoscaling_maximum_size_by_az = 10
+autoscaling_maximum_size_by_az = 5
